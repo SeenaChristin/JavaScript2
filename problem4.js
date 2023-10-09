@@ -1,7 +1,7 @@
 function getCarYears(inventory){
    let carYearArr =[];
-   inventory.map((car)=>{
-    carYearArr.push(car.car_year);
+   carYearArr = inventory.map((car)=>{
+     return car.car_year;
    });
    console.log(carYearArr);
    return carYearArr;

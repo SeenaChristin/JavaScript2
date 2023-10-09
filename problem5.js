@@ -2,13 +2,10 @@ const getCarYears = require('./problem4');
 
 function getOlderCars(inventory,year){
     let carYearsArr = getCarYears(inventory);
-    let count =0;
-    carYearsArr.map((carYear)=>{
-      if(carYear<year){
-        count++;
-      }
+    let resultArr = carYearsArr.filter((carYear)=>{
+     return carYear<2000;
     })
-    console.log(count);
+    console.log(resultArr.length);
   }
   
   module.exports = getOlderCars;
